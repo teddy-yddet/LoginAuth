@@ -1,17 +1,19 @@
 <?php
-    $dbHost = 'localhost';
+
+    $dbHost = 'Localhost';
     $dbUsername = 'root';
     $dbPassword = '';
     $dbName = 'loginauth';
+    
+    $conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
 
-    $conexao = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
-
-    // IF($conexao->connect_errno)
+    // if($conexao->connect_errno)
     // {
     //     echo "Erro";
     // }
     // else
     // {
-    //     echo "Conexão efetuada com sucesso!";
+    //     echo "Conexão efetuada com sucesso";
     // }
+
 ?>
